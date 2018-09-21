@@ -44,7 +44,29 @@ namespace gfbewiubgfvwe9uibgw
             }
             Console.WriteLine("Legnagyobb szám: " + max2);
 
- 
+            //3. feladat
+            Console.WriteLine("3. feladat");
+            int[] tomb3 = new int[10];
+            int max3 = 0;
+            int min3 = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Írjob be még {0} számot!", +10 - 1);
+
+                tomb3[i] = Convert.ToInt32(Console.ReadLine());
+                if (tomb3[i] > max3)
+                {
+                    max3 = tomb3[i];
+                }
+                if (tomb3[i] > min3)
+                {
+                    min3 = tomb3[i];
+                }
+
+            }
+            Console.WriteLine("Legnagyobb szám: " + max3);
+            Console.WriteLine("A legkissebb szám a: " + min3);
+
 
 
             Console.ReadLine();
