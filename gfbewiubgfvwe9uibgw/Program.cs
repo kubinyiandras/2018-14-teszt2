@@ -16,13 +16,17 @@ namespace gfbewiubgfvwe9uibgw
             int max1 = 0;
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Írjob be még {0} számot!", +10-1);
-                
+                Console.WriteLine("Írjob be még {0} számot!", +10);                
                 tomb1[i] = Convert.ToInt32(Console.ReadLine());
-                if (tomb1[i]>max1)
+                if (!int.TryParse(Console.ReadLine(),out tomb1[i]))
                 {
-                    max1 = tomb1[i];
+                    Console.WriteLine("Nem számot adtál meg kérlek adj meg számot.");
+                    if (tomb1[i] > max1)
+                    {
+                        max1 = tomb1[i];
+                    }
                 }
+                
             }
             Console.WriteLine("Legnagyobb szám: "+max1);
 
@@ -66,6 +70,10 @@ namespace gfbewiubgfvwe9uibgw
             }
             Console.WriteLine("Legnagyobb szám: " + max3);
             Console.WriteLine("A legkissebb szám a: " + min3);
+
+            //4. feladat
+            Console.WriteLine("4. feladat");
+
 
 
 
