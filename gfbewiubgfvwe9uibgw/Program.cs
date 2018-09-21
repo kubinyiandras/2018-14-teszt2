@@ -21,7 +21,10 @@ namespace gfbewiubgfvwe9uibgw
                 if (!int.TryParse(Console.ReadLine(),out tomb1[i]))
                 {
                     Console.WriteLine("Nem számot adtál meg kérlek adj meg számot.");
+                    Console.ReadLine();
+                    return;
                     if (tomb1[i] > max1)
+
                     {
                         max1 = tomb1[i];
                     }
